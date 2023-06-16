@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57F624742A3C1EB400ABEB06 /* IBMoyaRESTAPI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 57F624732A3C1EB400ABEB06 /* IBMoyaRESTAPI.docc */; };
+		57F6247A2A3C1EB500ABEB06 /* IBMoyaRESTAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F6246F2A3C1EB400ABEB06 /* IBMoyaRESTAPI.framework */; };
+		57F6247F2A3C1EB500ABEB06 /* IBMoyaRESTAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F6247E2A3C1EB500ABEB06 /* IBMoyaRESTAPITests.swift */; };
+		57F624802A3C1EB500ABEB06 /* IBMoyaRESTAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 57F624722A3C1EB400ABEB06 /* IBMoyaRESTAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57F624932A3C1ED000ABEB06 /* NetworkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F6248A2A3C1ED000ABEB06 /* NetworkType.swift */; };
+		57F624942A3C1ED000ABEB06 /* NetworkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F6248A2A3C1ED000ABEB06 /* NetworkType.swift */; };
+		57F624952A3C1ED000ABEB06 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F6248C2A3C1ED000ABEB06 /* ReachabilityManager.swift */; };
+		57F624962A3C1ED000ABEB06 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F6248C2A3C1ED000ABEB06 /* ReachabilityManager.swift */; };
+		57F624972A3C1ED000ABEB06 /* Dictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F6248D2A3C1ED000ABEB06 /* Dictionary+JSON.swift */; };
+		57F624982A3C1ED000ABEB06 /* Dictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F6248D2A3C1ED000ABEB06 /* Dictionary+JSON.swift */; };
+		57F624992A3C1ED000ABEB06 /* FileSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F6248E2A3C1ED000ABEB06 /* FileSystem.swift */; };
+		57F6249A2A3C1ED000ABEB06 /* FileSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F6248E2A3C1ED000ABEB06 /* FileSystem.swift */; };
+		57F6249B2A3C1ED000ABEB06 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F6248F2A3C1ED000ABEB06 /* Data+Extension.swift */; };
+		57F6249C2A3C1ED000ABEB06 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F6248F2A3C1ED000ABEB06 /* Data+Extension.swift */; };
+		57F6249D2A3C1ED000ABEB06 /* NetworkKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F624902A3C1ED000ABEB06 /* NetworkKit.swift */; };
+		57F6249E2A3C1ED000ABEB06 /* NetworkKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F624902A3C1ED000ABEB06 /* NetworkKit.swift */; };
+		57F6249F2A3C1ED000ABEB06 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F624912A3C1ED000ABEB06 /* BaseAPI.swift */; };
+		57F624A02A3C1ED000ABEB06 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F624912A3C1ED000ABEB06 /* BaseAPI.swift */; };
+		57F624A12A3C1ED000ABEB06 /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F624922A3C1ED000ABEB06 /* RestAPI.swift */; };
+		57F624A22A3C1ED000ABEB06 /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F624922A3C1ED000ABEB06 /* RestAPI.swift */; };
+		57F624AE2A3C1F0A00ABEB06 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 57F624AD2A3C1F0A00ABEB06 /* Alamofire */; };
+		57F624B42A3C1F4700ABEB06 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 57F624B32A3C1F4700ABEB06 /* SwiftyJSON */; };
+		57FBA0542A3C57C10082E5B6 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 57FBA0532A3C57C10082E5B6 /* RxMoya */; };
+		57FBA0572A3C582D0082E5B6 /* RxSwift-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 57FBA0562A3C582D0082E5B6 /* RxSwift-Dynamic */; };
+		57FBA0582A3C582D0082E5B6 /* RxSwift-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 57FBA0562A3C582D0082E5B6 /* RxSwift-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57F6247B2A3C1EB500ABEB06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57F624662A3C1EB400ABEB06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57F6246E2A3C1EB400ABEB06;
+			remoteInfo = IBMoyaRESTAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		57FBA0482A3C55E40082E5B6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				57FBA0582A3C582D0082E5B6 /* RxSwift-Dynamic in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		57F6246F2A3C1EB400ABEB06 /* IBMoyaRESTAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBMoyaRESTAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57F624722A3C1EB400ABEB06 /* IBMoyaRESTAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBMoyaRESTAPI.h; sourceTree = "<group>"; };
+		57F624732A3C1EB400ABEB06 /* IBMoyaRESTAPI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = IBMoyaRESTAPI.docc; sourceTree = "<group>"; };
+		57F624792A3C1EB500ABEB06 /* IBMoyaRESTAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBMoyaRESTAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57F6247E2A3C1EB500ABEB06 /* IBMoyaRESTAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBMoyaRESTAPITests.swift; sourceTree = "<group>"; };
+		57F6248A2A3C1ED000ABEB06 /* NetworkType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkType.swift; sourceTree = "<group>"; };
+		57F6248C2A3C1ED000ABEB06 /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		57F6248D2A3C1ED000ABEB06 /* Dictionary+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+JSON.swift"; sourceTree = "<group>"; };
+		57F6248E2A3C1ED000ABEB06 /* FileSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSystem.swift; sourceTree = "<group>"; };
+		57F6248F2A3C1ED000ABEB06 /* Data+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		57F624902A3C1ED000ABEB06 /* NetworkKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkKit.swift; sourceTree = "<group>"; };
+		57F624912A3C1ED000ABEB06 /* BaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		57F624922A3C1ED000ABEB06 /* RestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAPI.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57F6246C2A3C1EB400ABEB06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57FBA0572A3C582D0082E5B6 /* RxSwift-Dynamic in Frameworks */,
+				57FBA0542A3C57C10082E5B6 /* RxMoya in Frameworks */,
+				57F624B42A3C1F4700ABEB06 /* SwiftyJSON in Frameworks */,
+				57F624AE2A3C1F0A00ABEB06 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57F624762A3C1EB500ABEB06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57F6247A2A3C1EB500ABEB06 /* IBMoyaRESTAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57F624652A3C1EB400ABEB06 = {
+			isa = PBXGroup;
+			children = (
+				57F624712A3C1EB400ABEB06 /* IBMoyaRESTAPI */,
+				57F6247D2A3C1EB500ABEB06 /* IBMoyaRESTAPITests */,
+				57F624702A3C1EB400ABEB06 /* Products */,
+				57F624B52A3C1FD800ABEB06 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		57F624702A3C1EB400ABEB06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57F6246F2A3C1EB400ABEB06 /* IBMoyaRESTAPI.framework */,
+				57F624792A3C1EB500ABEB06 /* IBMoyaRESTAPITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57F624712A3C1EB400ABEB06 /* IBMoyaRESTAPI */ = {
+			isa = PBXGroup;
+			children = (
+				57F624892A3C1ED000ABEB06 /* Network */,
+				57F624722A3C1EB400ABEB06 /* IBMoyaRESTAPI.h */,
+				57F624732A3C1EB400ABEB06 /* IBMoyaRESTAPI.docc */,
+			);
+			path = IBMoyaRESTAPI;
+			sourceTree = "<group>";
+		};
+		57F6247D2A3C1EB500ABEB06 /* IBMoyaRESTAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				57F6247E2A3C1EB500ABEB06 /* IBMoyaRESTAPITests.swift */,
+			);
+			path = IBMoyaRESTAPITests;
+			sourceTree = "<group>";
+		};
+		57F624892A3C1ED000ABEB06 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				57F6248B2A3C1ED000ABEB06 /* Extension */,
+				57F6248A2A3C1ED000ABEB06 /* NetworkType.swift */,
+				57F624902A3C1ED000ABEB06 /* NetworkKit.swift */,
+				57F624912A3C1ED000ABEB06 /* BaseAPI.swift */,
+				57F624922A3C1ED000ABEB06 /* RestAPI.swift */,
+			);
+			path = Network;
+			sourceTree = SOURCE_ROOT;
+		};
+		57F6248B2A3C1ED000ABEB06 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				57F6248C2A3C1ED000ABEB06 /* ReachabilityManager.swift */,
+				57F6248D2A3C1ED000ABEB06 /* Dictionary+JSON.swift */,
+				57F6248E2A3C1ED000ABEB06 /* FileSystem.swift */,
+				57F6248F2A3C1ED000ABEB06 /* Data+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		57F624B52A3C1FD800ABEB06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		57F6246A2A3C1EB400ABEB06 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57F624802A3C1EB500ABEB06 /* IBMoyaRESTAPI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		57F6246E2A3C1EB400ABEB06 /* IBMoyaRESTAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57F624832A3C1EB500ABEB06 /* Build configuration list for PBXNativeTarget "IBMoyaRESTAPI" */;
+			buildPhases = (
+				57F6246A2A3C1EB400ABEB06 /* Headers */,
+				57F6246B2A3C1EB400ABEB06 /* Sources */,
+				57F6246C2A3C1EB400ABEB06 /* Frameworks */,
+				57F6246D2A3C1EB400ABEB06 /* Resources */,
+				57FBA0482A3C55E40082E5B6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IBMoyaRESTAPI;
+			packageProductDependencies = (
+				57F624AD2A3C1F0A00ABEB06 /* Alamofire */,
+				57F624B32A3C1F4700ABEB06 /* SwiftyJSON */,
+				57FBA0532A3C57C10082E5B6 /* RxMoya */,
+				57FBA0562A3C582D0082E5B6 /* RxSwift-Dynamic */,
+			);
+			productName = IBMoyaRESTAPI;
+			productReference = 57F6246F2A3C1EB400ABEB06 /* IBMoyaRESTAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		57F624782A3C1EB500ABEB06 /* IBMoyaRESTAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57F624862A3C1EB500ABEB06 /* Build configuration list for PBXNativeTarget "IBMoyaRESTAPITests" */;
+			buildPhases = (
+				57F624752A3C1EB500ABEB06 /* Sources */,
+				57F624762A3C1EB500ABEB06 /* Frameworks */,
+				57F624772A3C1EB500ABEB06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57F6247C2A3C1EB500ABEB06 /* PBXTargetDependency */,
+			);
+			name = IBMoyaRESTAPITests;
+			productName = IBMoyaRESTAPITests;
+			productReference = 57F624792A3C1EB500ABEB06 /* IBMoyaRESTAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57F624662A3C1EB400ABEB06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					57F6246E2A3C1EB400ABEB06 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					57F624782A3C1EB500ABEB06 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 57F624692A3C1EB400ABEB06 /* Build configuration list for PBXProject "IBMoyaRESTAPI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57F624652A3C1EB400ABEB06;
+			packageReferences = (
+				57F624A32A3C1EFD00ABEB06 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				57F624AC2A3C1F0A00ABEB06 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				57F624AF2A3C1F3A00ABEB06 /* XCRemoteSwiftPackageReference "Moya" */,
+				57F624B22A3C1F4700ABEB06 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
+			productRefGroup = 57F624702A3C1EB400ABEB06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57F6246E2A3C1EB400ABEB06 /* IBMoyaRESTAPI */,
+				57F624782A3C1EB500ABEB06 /* IBMoyaRESTAPITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57F6246D2A3C1EB400ABEB06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57F624772A3C1EB500ABEB06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57F6246B2A3C1EB400ABEB06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57F624932A3C1ED000ABEB06 /* NetworkType.swift in Sources */,
+				57F6249D2A3C1ED000ABEB06 /* NetworkKit.swift in Sources */,
+				57F624992A3C1ED000ABEB06 /* FileSystem.swift in Sources */,
+				57F624A12A3C1ED000ABEB06 /* RestAPI.swift in Sources */,
+				57F624952A3C1ED000ABEB06 /* ReachabilityManager.swift in Sources */,
+				57F624742A3C1EB400ABEB06 /* IBMoyaRESTAPI.docc in Sources */,
+				57F6249F2A3C1ED000ABEB06 /* BaseAPI.swift in Sources */,
+				57F624972A3C1ED000ABEB06 /* Dictionary+JSON.swift in Sources */,
+				57F6249B2A3C1ED000ABEB06 /* Data+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57F624752A3C1EB500ABEB06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57F624942A3C1ED000ABEB06 /* NetworkType.swift in Sources */,
+				57F6249E2A3C1ED000ABEB06 /* NetworkKit.swift in Sources */,
+				57F6249A2A3C1ED000ABEB06 /* FileSystem.swift in Sources */,
+				57F624A22A3C1ED000ABEB06 /* RestAPI.swift in Sources */,
+				57F624962A3C1ED000ABEB06 /* ReachabilityManager.swift in Sources */,
+				57F6247F2A3C1EB500ABEB06 /* IBMoyaRESTAPITests.swift in Sources */,
+				57F624A02A3C1ED000ABEB06 /* BaseAPI.swift in Sources */,
+				57F624982A3C1ED000ABEB06 /* Dictionary+JSON.swift in Sources */,
+				57F6249C2A3C1ED000ABEB06 /* Data+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57F6247C2A3C1EB500ABEB06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57F6246E2A3C1EB400ABEB06 /* IBMoyaRESTAPI */;
+			targetProxy = 57F6247B2A3C1EB500ABEB06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		57F624812A3C1EB500ABEB06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		57F624822A3C1EB500ABEB06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		57F624842A3C1EB500ABEB06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MZ6AD225DP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				OTHER_LDFLAGS = "-OjbC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ib.RESTAPI.IBMoyaRESTAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57F624852A3C1EB500ABEB06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MZ6AD225DP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				OTHER_LDFLAGS = "-OjbC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ib.RESTAPI.IBMoyaRESTAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		57F624872A3C1EB500ABEB06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MZ6AD225DP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ib.RESTAPI.IBMoyaRESTAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57F624882A3C1EB500ABEB06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MZ6AD225DP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ib.RESTAPI.IBMoyaRESTAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57F624692A3C1EB400ABEB06 /* Build configuration list for PBXProject "IBMoyaRESTAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57F624812A3C1EB500ABEB06 /* Debug */,
+				57F624822A3C1EB500ABEB06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57F624832A3C1EB500ABEB06 /* Build configuration list for PBXNativeTarget "IBMoyaRESTAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57F624842A3C1EB500ABEB06 /* Debug */,
+				57F624852A3C1EB500ABEB06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57F624862A3C1EB500ABEB06 /* Build configuration list for PBXNativeTarget "IBMoyaRESTAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57F624872A3C1EB500ABEB06 /* Debug */,
+				57F624882A3C1EB500ABEB06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		57F624A32A3C1EFD00ABEB06 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		57F624AC2A3C1F0A00ABEB06 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		57F624AF2A3C1F3A00ABEB06 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+		57F624B22A3C1F4700ABEB06 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		57F624AD2A3C1F0A00ABEB06 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57F624AC2A3C1F0A00ABEB06 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		57F624B32A3C1F4700ABEB06 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57F624B22A3C1F4700ABEB06 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		57FBA0532A3C57C10082E5B6 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57F624AF2A3C1F3A00ABEB06 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		57FBA0562A3C582D0082E5B6 /* RxSwift-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57F624A32A3C1EFD00ABEB06 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxSwift-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 57F624662A3C1EB400ABEB06 /* Project object */;
+}
