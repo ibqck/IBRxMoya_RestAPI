@@ -22,7 +22,7 @@ public protocol TokenManager_Protocol {
     func getRefreshToken_Target(rest : RestAPI)  -> BaseAPI?
 }
 
-enum TokenError : Swift.Error{
+public enum TokenError : Swift.Error{
     case Token_Expired
     case Token_Invalid
     case Token_Invalid_ETC
