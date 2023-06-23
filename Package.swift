@@ -21,6 +21,7 @@ let package = Package(
             dependencies: [
                 .product(name: "RxSwift", package: "RxSwift"),
                 .product(name: "Moya", package: "Moya"),
+                .product(name: "RxMoya", package: "RxMoya"),
                 .product(name: "Alamofire", package: "Alamofire"),
                 .product(name: "SwiftyJSON", package: "SwiftyJSON")
             ]
