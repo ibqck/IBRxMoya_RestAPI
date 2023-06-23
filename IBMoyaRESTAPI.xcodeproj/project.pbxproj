@@ -7,17 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57892C062A45595B00EB7AB2 /* IBMoya_RESTAPI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 57892BFB2A45595B00EB7AB2 /* IBMoya_RESTAPI.docc */; };
+		57892C072A45595B00EB7AB2 /* NetworkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57892BFD2A45595B00EB7AB2 /* NetworkType.swift */; };
+		57892C082A45595B00EB7AB2 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57892BFF2A45595B00EB7AB2 /* ReachabilityManager.swift */; };
+		57892C092A45595B00EB7AB2 /* Dictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57892C002A45595B00EB7AB2 /* Dictionary+JSON.swift */; };
+		57892C0A2A45595B00EB7AB2 /* FileSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57892C012A45595B00EB7AB2 /* FileSystem.swift */; };
+		57892C0B2A45595B00EB7AB2 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57892C022A45595B00EB7AB2 /* Data+Extension.swift */; };
+		57892C0C2A45595B00EB7AB2 /* NetworkKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57892C032A45595B00EB7AB2 /* NetworkKit.swift */; };
+		57892C0D2A45595B00EB7AB2 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57892C042A45595B00EB7AB2 /* BaseAPI.swift */; };
+		57892C0E2A45595B00EB7AB2 /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57892C052A45595B00EB7AB2 /* RestAPI.swift */; };
 		578C44F72A4534A6008510C7 /* IBRxMoya_RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578C44E92A4534A6008510C7 /* IBRxMoya_RestAPI.swift */; };
-		578C44F82A4534A6008510C7 /* IBMoyaRESTAPI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 578C44EB2A4534A6008510C7 /* IBMoyaRESTAPI.docc */; };
-		578C44F92A4534A6008510C7 /* NetworkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578C44ED2A4534A6008510C7 /* NetworkType.swift */; };
-		578C44FA2A4534A6008510C7 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578C44EF2A4534A6008510C7 /* ReachabilityManager.swift */; };
-		578C44FB2A4534A6008510C7 /* Dictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578C44F02A4534A6008510C7 /* Dictionary+JSON.swift */; };
-		578C44FC2A4534A6008510C7 /* FileSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578C44F12A4534A6008510C7 /* FileSystem.swift */; };
-		578C44FD2A4534A6008510C7 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578C44F22A4534A6008510C7 /* Data+Extension.swift */; };
-		578C44FE2A4534A6008510C7 /* NetworkKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578C44F32A4534A6008510C7 /* NetworkKit.swift */; };
-		578C44FF2A4534A6008510C7 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578C44F42A4534A6008510C7 /* BaseAPI.swift */; };
-		578C45002A4534A6008510C7 /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578C44F52A4534A6008510C7 /* RestAPI.swift */; };
-		578C45012A4534A6008510C7 /* IBMoyaRESTAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 578C44F62A4534A6008510C7 /* IBMoyaRESTAPI.h */; };
 		57F6247A2A3C1EB500ABEB06 /* IBMoyaRESTAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F6246F2A3C1EB400ABEB06 /* IBMoyaRESTAPI.framework */; };
 		57F6247F2A3C1EB500ABEB06 /* IBMoyaRESTAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F6247E2A3C1EB500ABEB06 /* IBMoyaRESTAPITests.swift */; };
 		57F624AE2A3C1F0A00ABEB06 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 57F624AD2A3C1F0A00ABEB06 /* Alamofire */; };
@@ -52,17 +51,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		57892BFB2A45595B00EB7AB2 /* IBMoya_RESTAPI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = IBMoya_RESTAPI.docc; sourceTree = "<group>"; };
+		57892BFD2A45595B00EB7AB2 /* NetworkType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkType.swift; sourceTree = "<group>"; };
+		57892BFF2A45595B00EB7AB2 /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		57892C002A45595B00EB7AB2 /* Dictionary+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+JSON.swift"; sourceTree = "<group>"; };
+		57892C012A45595B00EB7AB2 /* FileSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSystem.swift; sourceTree = "<group>"; };
+		57892C022A45595B00EB7AB2 /* Data+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		57892C032A45595B00EB7AB2 /* NetworkKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkKit.swift; sourceTree = "<group>"; };
+		57892C042A45595B00EB7AB2 /* BaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		57892C052A45595B00EB7AB2 /* RestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAPI.swift; sourceTree = "<group>"; };
 		578C44E92A4534A6008510C7 /* IBRxMoya_RestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBRxMoya_RestAPI.swift; sourceTree = "<group>"; };
-		578C44EB2A4534A6008510C7 /* IBMoyaRESTAPI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = IBMoyaRESTAPI.docc; sourceTree = "<group>"; };
-		578C44ED2A4534A6008510C7 /* NetworkType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkType.swift; sourceTree = "<group>"; };
-		578C44EF2A4534A6008510C7 /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
-		578C44F02A4534A6008510C7 /* Dictionary+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+JSON.swift"; sourceTree = "<group>"; };
-		578C44F12A4534A6008510C7 /* FileSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSystem.swift; sourceTree = "<group>"; };
-		578C44F22A4534A6008510C7 /* Data+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
-		578C44F32A4534A6008510C7 /* NetworkKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkKit.swift; sourceTree = "<group>"; };
-		578C44F42A4534A6008510C7 /* BaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
-		578C44F52A4534A6008510C7 /* RestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAPI.swift; sourceTree = "<group>"; };
-		578C44F62A4534A6008510C7 /* IBMoyaRESTAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBMoyaRESTAPI.h; sourceTree = "<group>"; };
 		57F6246F2A3C1EB400ABEB06 /* IBMoyaRESTAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBMoyaRESTAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57F624792A3C1EB500ABEB06 /* IBMoyaRESTAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBMoyaRESTAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57F6247E2A3C1EB500ABEB06 /* IBMoyaRESTAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBMoyaRESTAPITests.swift; sourceTree = "<group>"; };
@@ -91,11 +89,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57892BFC2A45595B00EB7AB2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				57892BFD2A45595B00EB7AB2 /* NetworkType.swift */,
+				57892BFE2A45595B00EB7AB2 /* Extension */,
+				57892C032A45595B00EB7AB2 /* NetworkKit.swift */,
+				57892C042A45595B00EB7AB2 /* BaseAPI.swift */,
+				57892C052A45595B00EB7AB2 /* RestAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		57892BFE2A45595B00EB7AB2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				57892BFF2A45595B00EB7AB2 /* ReachabilityManager.swift */,
+				57892C002A45595B00EB7AB2 /* Dictionary+JSON.swift */,
+				57892C012A45595B00EB7AB2 /* FileSystem.swift */,
+				57892C022A45595B00EB7AB2 /* Data+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		578C44E72A4534A6008510C7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				578C44E82A4534A6008510C7 /* IBRxMoya_RestAPI */,
-				578C44EA2A4534A6008510C7 /* IBMoyaRESTAPI */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -103,42 +123,11 @@
 		578C44E82A4534A6008510C7 /* IBRxMoya_RestAPI */ = {
 			isa = PBXGroup;
 			children = (
+				57892BFB2A45595B00EB7AB2 /* IBMoya_RESTAPI.docc */,
+				57892BFC2A45595B00EB7AB2 /* Network */,
 				578C44E92A4534A6008510C7 /* IBRxMoya_RestAPI.swift */,
 			);
 			path = IBRxMoya_RestAPI;
-			sourceTree = "<group>";
-		};
-		578C44EA2A4534A6008510C7 /* IBMoyaRESTAPI */ = {
-			isa = PBXGroup;
-			children = (
-				578C44EB2A4534A6008510C7 /* IBMoyaRESTAPI.docc */,
-				578C44EC2A4534A6008510C7 /* Network */,
-				578C44F62A4534A6008510C7 /* IBMoyaRESTAPI.h */,
-			);
-			path = IBMoyaRESTAPI;
-			sourceTree = "<group>";
-		};
-		578C44EC2A4534A6008510C7 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				578C44ED2A4534A6008510C7 /* NetworkType.swift */,
-				578C44EE2A4534A6008510C7 /* Extension */,
-				578C44F32A4534A6008510C7 /* NetworkKit.swift */,
-				578C44F42A4534A6008510C7 /* BaseAPI.swift */,
-				578C44F52A4534A6008510C7 /* RestAPI.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		578C44EE2A4534A6008510C7 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				578C44EF2A4534A6008510C7 /* ReachabilityManager.swift */,
-				578C44F02A4534A6008510C7 /* Dictionary+JSON.swift */,
-				578C44F12A4534A6008510C7 /* FileSystem.swift */,
-				578C44F22A4534A6008510C7 /* Data+Extension.swift */,
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		57F624652A3C1EB400ABEB06 = {
@@ -182,7 +171,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				578C45012A4534A6008510C7 /* IBMoyaRESTAPI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,15 +285,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				578C44FA2A4534A6008510C7 /* ReachabilityManager.swift in Sources */,
-				578C44FD2A4534A6008510C7 /* Data+Extension.swift in Sources */,
-				578C44F92A4534A6008510C7 /* NetworkType.swift in Sources */,
-				578C44FF2A4534A6008510C7 /* BaseAPI.swift in Sources */,
-				578C44FB2A4534A6008510C7 /* Dictionary+JSON.swift in Sources */,
-				578C44F82A4534A6008510C7 /* IBMoyaRESTAPI.docc in Sources */,
-				578C45002A4534A6008510C7 /* RestAPI.swift in Sources */,
-				578C44FE2A4534A6008510C7 /* NetworkKit.swift in Sources */,
-				578C44FC2A4534A6008510C7 /* FileSystem.swift in Sources */,
+				57892C082A45595B00EB7AB2 /* ReachabilityManager.swift in Sources */,
+				57892C0B2A45595B00EB7AB2 /* Data+Extension.swift in Sources */,
+				57892C072A45595B00EB7AB2 /* NetworkType.swift in Sources */,
+				57892C0D2A45595B00EB7AB2 /* BaseAPI.swift in Sources */,
+				57892C092A45595B00EB7AB2 /* Dictionary+JSON.swift in Sources */,
+				57892C062A45595B00EB7AB2 /* IBMoya_RESTAPI.docc in Sources */,
+				57892C0E2A45595B00EB7AB2 /* RestAPI.swift in Sources */,
+				57892C0C2A45595B00EB7AB2 /* NetworkKit.swift in Sources */,
+				57892C0A2A45595B00EB7AB2 /* FileSystem.swift in Sources */,
 				578C44F72A4534A6008510C7 /* IBRxMoya_RestAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

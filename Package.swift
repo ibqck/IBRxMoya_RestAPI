@@ -13,7 +13,7 @@ let package = Package(
         .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "6.0.0"),
         .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.0.0"),
         .package(url: "https://github.com/Moya/Moya.git", from: "15.0.0"),
-        .package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git", from: "5.0.0"),
+        .package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git", from: "5.0.0")
     ],
     targets: [
         .target(
@@ -21,7 +21,7 @@ let package = Package(
             dependencies: [
                 .product(name: "RxSwift", package: "RxSwift"),
                 .product(name: "Moya", package: "Moya"),
-                .product(name: "RxMoya", package: "RxMoya"),
+                .product(name: "RxMoya", package: "Moya"),
                 .product(name: "Alamofire", package: "Alamofire"),
                 .product(name: "SwiftyJSON", package: "SwiftyJSON")
             ]
