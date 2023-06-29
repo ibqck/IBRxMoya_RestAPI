@@ -6,6 +6,17 @@
 //
 
 import Foundation
+import SwiftyJSON
+
+extension JSON {
+    func parseTo<T: Codable>() -> T? {
+        guard let data = try? rawData(options: .prettyPrinted) else {
+            return nil
+        }
+        let decoder = JSONDecoder()
+        return try? decoder.decode(T.self, from: data)
+    }
+}
 
 extension Dictionary where Key: ExpressibleByStringLiteral, Value: Any {
     var jsonString: String? {
