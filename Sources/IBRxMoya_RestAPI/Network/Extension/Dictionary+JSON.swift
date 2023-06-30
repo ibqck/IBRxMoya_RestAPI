@@ -8,7 +8,7 @@
 import Foundation
 import SwiftyJSON
 
-extension JSON {
+public extension JSON {
     func parseTo<T: Codable>() -> T? {
         guard let data = try? rawData(options: .prettyPrinted) else {
             return nil
