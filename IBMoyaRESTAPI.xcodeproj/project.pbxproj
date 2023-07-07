@@ -24,6 +24,8 @@
 		57FBA0542A3C57C10082E5B6 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 57FBA0532A3C57C10082E5B6 /* RxMoya */; };
 		57FBA0572A3C582D0082E5B6 /* RxSwift-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 57FBA0562A3C582D0082E5B6 /* RxSwift-Dynamic */; };
 		57FBA0582A3C582D0082E5B6 /* RxSwift-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 57FBA0562A3C582D0082E5B6 /* RxSwift-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		DA1D06652A579FCC00AD9E9B /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D06642A579FCC00AD9E9B /* String+Crypto.swift */; };
+		DA1D06662A579FCC00AD9E9B /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D06642A579FCC00AD9E9B /* String+Crypto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,7 @@
 		57F6246F2A3C1EB400ABEB06 /* IBMoyaRESTAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBMoyaRESTAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57F624792A3C1EB500ABEB06 /* IBMoyaRESTAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBMoyaRESTAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57F6247E2A3C1EB500ABEB06 /* IBMoyaRESTAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBMoyaRESTAPITests.swift; sourceTree = "<group>"; };
+		DA1D06642A579FCC00AD9E9B /* String+Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Crypto.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,7 @@
 				57892C002A45595B00EB7AB2 /* Dictionary+JSON.swift */,
 				57892C012A45595B00EB7AB2 /* FileSystem.swift */,
 				57892C022A45595B00EB7AB2 /* Data+Extension.swift */,
+				DA1D06642A579FCC00AD9E9B /* String+Crypto.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -295,6 +299,7 @@
 				57892C0C2A45595B00EB7AB2 /* NetworkKit.swift in Sources */,
 				57892C0A2A45595B00EB7AB2 /* FileSystem.swift in Sources */,
 				578C44F72A4534A6008510C7 /* IBRxMoya_RestAPI.swift in Sources */,
+				DA1D06652A579FCC00AD9E9B /* String+Crypto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57F6247F2A3C1EB500ABEB06 /* IBMoyaRESTAPITests.swift in Sources */,
+				DA1D06662A579FCC00AD9E9B /* String+Crypto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
