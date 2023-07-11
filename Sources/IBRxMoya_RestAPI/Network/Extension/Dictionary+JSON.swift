@@ -16,6 +16,14 @@ public extension JSON {
         let decoder = JSONDecoder()
         return try? decoder.decode(T.self, from: data)
     }
+    
+    func parseToType<T: Decodable>(_ type : T.Type) -> T? {
+        guard let data = try? rawData(options: .prettyPrinted) else {
+            return nil
+        }
+        let decoder = JSONDecoder()
+        return try? decoder.decode(T.self, from: data)
+    }
 }
 
 extension Dictionary where Key: ExpressibleByStringLiteral, Value: Any {
