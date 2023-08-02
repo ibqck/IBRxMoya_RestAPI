@@ -21,11 +21,6 @@ public class OnlineProvider<Target> where Target: Moya.TargetType {
                 plugins: [PluginType] = [],
                 trackInflights: Bool = true,
                 online: Observable<Bool> = connectedToInternet()) {
-        
-        
-        let manager = ServerTrustManager(evaluators: ["dev-banksp.shinhan.com": DisabledTrustEvaluator()])
-        let session = Session(serverTrustManager: manager)
-
         self.online = online
         self.provider = MoyaProvider(endpointClosure: endpointClosure, requestClosure: requestClosure, stubClosure: stubClosure, session: session, plugins: plugins, trackInflights: trackInflights)
     }
