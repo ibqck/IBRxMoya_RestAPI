@@ -24,13 +24,11 @@ public protocol BaseAPIProtocol {
 
 public class BaseAPI : BaseAPIProtocol
 {
-    
-    public typealias customType = Any
     var target: TargetProtocol
     var accessToken : String?
-    var custom : customType?
+    var custom : Any
 
-    public init(_ target: Target , token : String? = nil, custom : customType.Type? = nil) {
+    public init<customType>(_ target: Target , token : String? = nil, custom : customType) {
         self.target = target
         self.accessToken = token
         self.custom = custom
