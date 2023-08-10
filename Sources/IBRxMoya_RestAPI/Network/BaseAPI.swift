@@ -44,6 +44,11 @@ extension BaseAPI : TargetType, AccessTokenAuthorizable,CachePolicyGettable{
     var authorization_Token: String {
         return self.accessToken ?? ""
     }
+    
+    var customData : Any?{
+        return self.custom
+    }
+    
     public var authorizationType: Moya.AuthorizationType?{
         return self.target.authorizationType
     }
