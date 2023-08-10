@@ -28,9 +28,9 @@ public class BaseAPI : BaseAPIProtocol
     public typealias customType = Any
     var target: TargetProtocol
     var accessToken : String?
-    var custom : customType
+    var custom : customType?
 
-    public init(_ target: Target , token : String? = nil, custom : customType.Type ) {
+    public init(_ target: Target , token : String? = nil, custom : customType.Type? = nil) {
         self.target = target
         self.accessToken = token
         self.custom = custom
