@@ -28,7 +28,7 @@ public class BaseAPI : BaseAPIProtocol
     var accessToken : String?
     var custom : Any?
 
-    public init<customType>(_ target: Target , token : String? = nil, custom : customType? = nil) {
+    public init(_ target: Target , token : String? = nil, custom : Any? = nil) {
         self.target = target
         self.accessToken = token
         self.custom = custom
