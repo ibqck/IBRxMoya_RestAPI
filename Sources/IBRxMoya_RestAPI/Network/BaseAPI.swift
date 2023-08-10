@@ -26,12 +26,10 @@ public class BaseAPI : BaseAPIProtocol
 {
     var target: TargetProtocol
     var accessToken : String?
-    var custom : Any?
-
-    public init(_ target: Target , token : String? = nil, custom : Any? = nil) {
+    
+    public init(_ target: Target , token : String? = nil) {
         self.target = target
         self.accessToken = token
-        self.custom = custom
     }
 
 
@@ -44,11 +42,7 @@ extension BaseAPI : TargetType, AccessTokenAuthorizable,CachePolicyGettable{
     var authorization_Token: String {
         return self.accessToken ?? ""
     }
-    
-    var customData : Any?{
-        return self.custom
-    }
-    
+
     public var authorizationType: Moya.AuthorizationType?{
         return self.target.authorizationType
     }
