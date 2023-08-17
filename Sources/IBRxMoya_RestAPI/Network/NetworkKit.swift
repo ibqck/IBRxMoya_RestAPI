@@ -27,15 +27,31 @@ public class OnlineProvider<Target> where Target: Moya.TargetType {
 
     public func request(_ token: Target) -> Observable<Moya.Response> {
         let actualRequest = provider.rx.request(token)
+        
+        //FIXME: Cookie Work
+        _=actualRequest.map{
+            // 쿠기 동기화 (응답 전)
+            if let url =  $0.request?.url , let cookies = HTTPCookieStorage.sharedCookieStorage(forGroupContainerIdentifier: "SHPCookie").cookies(for:url){
+                HTTPCookieStorage.shared.setCookies(cookies, for: url, mainDocumentURL: url)
+            }
+        }
+        
         return online
             .take(1)
             .flatMap { _ in // Turn the online state into a network request
-
-
-
+       
                 actualRequest
                     .do(onSuccess: { (response) in
+        
+                        //FIXME: Cookie Work
+                        // 쿠기 동기화 (응답 후)
+                        if let url =  response.request?.url , let cookies = HTTPCookieStorage.sharedCookieStorage(forGroupContainerIdentifier: "SHPCookie").cookies(for:url){
+                            HTTPCookieStorage.shared.setCookies(cookies, for: url, mainDocumentURL: url)
+                        }
+                        
+                        
 
+                        
                         //debugPrint("+++ response=", response)
 
                         /// Test Code
