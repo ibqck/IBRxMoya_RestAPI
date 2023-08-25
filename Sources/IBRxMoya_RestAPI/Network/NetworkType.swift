@@ -28,12 +28,21 @@ public enum TokenError : Swift.Error{
     case Token_Invalid_ETC
 }
 
-public struct NetworkType_Configs{
-    let loggingEnabled : Bool
-    let timeOut : Int
-    var tokenClosure : ((TargetType) -> String)?
+public protocol NetworkType_ConfigsProtocol{
+    var trackInflights : Bool {get}// 중복호출 블록 여부
+    var loggingEnabled : Bool {get}
+    var timeOut : Int {get}
+    var tokenClosure : ((TargetType) -> String)? {get}
+}
 
-    public init(loggingEnabled: Bool, timeOut: Int, tokenClosure: ( (TargetType) -> String)? = nil) {
+public struct NetworkType_Configs : NetworkType_ConfigsProtocol{
+    public var trackInflights : Bool // 중복호출 블록 여부
+    public var loggingEnabled : Bool
+    public var timeOut : Int
+    public var tokenClosure : ((TargetType) -> String)?
+
+    public init(trackInflights : Bool = true ,loggingEnabled: Bool, timeOut: Int, tokenClosure: ( (TargetType) -> String)? = nil) {
+        self.trackInflights = trackInflights
         self.loggingEnabled = loggingEnabled
         self.timeOut = timeOut
         self.tokenClosure = tokenClosure
@@ -68,7 +77,16 @@ public protocol NetworkingType {
 
 extension NetworkingType {
     static func provider(configs : NetworkType_Configs) -> NetworkProvider {
-        return NetworkProvider(provider: newProvider(plugins(configs), timeOut: configs.timeOut))
+        
+        //TODO: X509 Pass
+        //let manager = ServerTrustManager(evaluators: ["*": DisabledTrustEvaluator()])
+        //let session = Session(serverTrustManager: manager)
+        
+        return NetworkProvider(provider: newProvider(plugins(configs),
+                                                     timeOut: configs.timeOut,
+                                                     trackInflights: configs.trackInflights)
+        //,session
+        )
     }
 }
 
@@ -185,13 +203,21 @@ extension NetworkingType {
     }
 }
 
-public func newProvider<T>(_ plugins: [PluginType], timeOut : Int, xAccessToken: String? = nil) -> OnlineProvider<T> {
+
+//TODO:  - SessionInit
+public func newProvider<T>(_ plugins: [PluginType],
+                           timeOut : Int,
+                           trackInflights : Bool = false,
+                           xAccessToken: String? = nil,
+                           session : Session? = nil
+) -> OnlineProvider<T> {
 
 
     return OnlineProvider(endpointClosure: NetworkProvider.endpointsClosure(xAccessToken),
                           requestClosure: NetworkProvider.endpointResolver(timeOut: timeOut),
                           stubClosure: NetworkProvider.APIKeysBasedStubBehaviour,
-                          plugins: plugins)
+                          session: session ?? MoyaProvider<T>.defaultAlamofireSession(),
+                          plugins: plugins,trackInflights: trackInflights)
 }
 
 // MARK: Cache

@@ -17,7 +17,7 @@ public class OnlineProvider<Target> where Target: Moya.TargetType {
     public init(endpointClosure: @escaping MoyaProvider<Target>.EndpointClosure = MoyaProvider<Target>.defaultEndpointMapping,
                 requestClosure: @escaping MoyaProvider<Target>.RequestClosure = MoyaProvider<Target>.defaultRequestMapping,
                 stubClosure: @escaping MoyaProvider<Target>.StubClosure = MoyaProvider<Target>.neverStub,
-                session: Session = MoyaProvider<Target>.defaultAlamofireSession(),
+                session: Session,
                 plugins: [PluginType] = [],
                 trackInflights: Bool = true,
                 online: Observable<Bool> = connectedToInternet()) {
